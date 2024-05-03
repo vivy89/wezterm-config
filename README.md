@@ -8,16 +8,6 @@
 
 ![](./screenshots/屏幕截图-2024-05-02-203944.png)
 
-## 相关链接
-
-- <https://github.com/rxi/lume>
-- <https://github.com/catppuccin/wezterm>
-- <https://github.com/wez/wezterm/discussions/628#discussioncomment-1874614>
-- <https://github.com/wez/wezterm/discussions/628#discussioncomment-5942139>
-- <https://github.com/wez/wezterm/discussions/628#discussioncomment-3649195>
-
-
-
 ## 原作者仓库
 
 - <https://github.com/QianSong1/wezterm-config>
@@ -43,7 +33,7 @@
 
 3、将解压的文件放入：`$HOME/.config/wezterm`目录底下
 
-Windows目录：`C:\Users\xxx\.config\wezterm`
+Windows目录：`C:\Users\用户名\.config\wezterm`
 
 
 
@@ -54,9 +44,9 @@ Windows目录：`C:\Users\xxx\.config\wezterm`
 Ctrl+shift+c    --复制
 Ctrl+shift+v    --粘贴
 Shift+Insert    --粘贴
+Alt+Enter       --打开新的标签栏
 Alt+h/l         --左右选标签栏
 Ctrl+shift+r    --重命名标签栏
-Alt+Enter       --打开新的标签栏
 Ctrl+alt+[\]    --水平拆分窗格，即左右拆分
 Ctrl+alt+[/]    --垂直拆分窗格，即上下拆分
 Alt-w           --关闭窗格
@@ -69,3 +59,19 @@ Alt+[↑]         --放大字体
 Alt+[↓]         --缩小字体
 Alt+r           --重置字体大小
 ```
+
+完整快捷键配置：参考`config/bindings.lua`
+
+## ssh domains
+
+自动连接ssh：参考`config/domains.lua`
+
+## 随机壁纸
+
+每次启动wezterm，随机设置`./backdrops`目录下的图片为壁纸。
+
+## 字体
+
+默认字体是：`MesloLGM Nerd Font Mono`
+
+[Meslo字体下载链接](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Meslo.zip)
