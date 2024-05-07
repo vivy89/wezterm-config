@@ -120,6 +120,10 @@ local keys = {
 			end),
 		}),
 	},
+
+	-- scrollback
+	{ key = 'PageUp',   mods = 'SHIFT', action = act.ScrollByPage(-0.5) },
+	{ key = 'PageDown', mods = 'SHIFT', action = act.ScrollByPage(0.5) },
 }
 
 local key_tables = {
