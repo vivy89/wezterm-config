@@ -5,6 +5,8 @@ return {
 	exit_behavior = 'Close', -- if the shell program exited with a successful status
 	status_update_interval = 1000,
 
+	audible_bell = "Disabled",
+
 	-- scrollbar
 	scrollback_lines = 5000,
 
