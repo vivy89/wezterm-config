@@ -31,15 +31,13 @@ local charging_icons = {
    nf.md_battery_charging,
 }
 
-local bg_color = '#333333'
-
 local colors = {
-	date_fg = '#fab387',
-	date_bg = bg_color,
-	battery_fg = '#f9e2af',
-	battery_bg = bg_color,
-	separator_fg = '#74c7ec',
-	separator_bg = bg_color,
+   date_fg = '#fab387',
+   date_bg = 'rgba(0, 0, 0, 0.4)',
+   battery_fg = '#f9e2af',
+   battery_bg = 'rgba(0, 0, 0, 0.4)',
+   separator_fg = '#74c7ec',
+   separator_bg = 'rgba(0, 0, 0, 0.4)',
 }
 
 local __cells__ = {} -- wezterm FormatItems (ref: https://wezfurlong.org/wezterm/config/lua/wezterm/format.html)

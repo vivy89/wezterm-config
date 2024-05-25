@@ -3,14 +3,13 @@ local wezterm = require('wezterm')
 ---@class Config
 ---@field options table
 local Config = {}
+Config.__index = Config
 
 ---Initialize Config
 ---@return Config
 function Config:init()
-   local o = {}
-   self = setmetatable(o, { __index = Config })
-   self.options = {}
-   return o
+   local config = setmetatable({ options = {} }, self)
+   return config
 end
 
 ---Append to `Config.options`

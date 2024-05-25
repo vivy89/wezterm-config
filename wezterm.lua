@@ -3,12 +3,12 @@ local Config = require('config')
 require('utils.backdrops'):set_files():random()
 
 require('events.right-status').setup()
+require('events.left-status').setup()
 require('events.tab-title').setup()
 require('events.new-tab-button').setup()
 
 local wezterm = require 'wezterm'
 local mux = wezterm.mux
-
 wezterm.on('gui-attached', function(domain)
   -- maximize all displayed windows on startup
   local workspace = mux.get_active_workspace()
