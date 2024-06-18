@@ -60,8 +60,7 @@ local keys = {
 
    -- tabs --
    -- tabs: spawn+close
-   { key = 'Enter',      mods = mod.SUPER,     action = act.SpawnTab('DefaultDomain') },
-   { key = 't',          mods = mod.SUPER_REV, action = act.SpawnTab('DefaultDomain') },
+   { key = 't',          mods = 'CTRL|ALT', action = act.SpawnTab('DefaultDomain') },
    { key = 'w',          mods = mod.SUPER,     action = act.CloseCurrentTab({ confirm = false }) },
 
    -- tabs: navigation
